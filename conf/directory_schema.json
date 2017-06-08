@@ -17,6 +17,13 @@
             "actif": "Boolean",
             "notes": "String",
             "actif": "Boolean",
+			"date": "String",
+			"conges": "Number",
+			"jours_pris": "Number",
+			"jours_dispo": "Number",
+			"rtt": "Number",
+			"rtt_pris": "Number",
+			"rtt_dispo": "Number",
             "role": {
               "type": "ObjectId",
               "ref": "Role"
@@ -46,7 +53,14 @@
             "role": {
               "type": "ObjectId",
               "ref": "Role"
-            }
+            },
+			"conges": "Number",
+			"date": "String",
+			"jours_pris": "Number",
+			"jours_dispo": "Number",
+			"rtt": "Number",
+			"rtt_pris": "Number",
+			"rtt_dispo": "Number"
         }
     },
     "Role": {

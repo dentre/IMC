@@ -36,6 +36,22 @@
         "redirect": true,
         "redirect_action" : "login"
     },
+	"GET/consult": {
+		"module": "finder",
+		"methode": "one",
+		"screen": "consult",
+		"auth": true,
+		"params_names": ["_id"],
+		"data_model": "AccountId"
+	},
+	"POST/insertconges": {
+		"module": "updater",
+        "methode": "one",
+        "screen": "consult",
+        "params_names": ["_id","conges","rtt"],
+		"auth": true,
+        "data_model": "AccountId"
+	},
     "GET/logs": {
         "module": "finder",
         "methode": "list",

@@ -120,7 +120,7 @@
         "methode": "one",
         "screen": "users",
         "auth": true,
-        "params_names": ["login", "password", "nom", "prenom", "titre", "sexe", "password", "email", "telephone", "adresse1", "adresse2", "code_postal", "ville",  "actif", "notes", "role"],
+        "params_names": ["login", "password", "nom", "prenom", "titre", "sexe", "password", "email", "telephone", "adresse1", "adresse2", "code_postal", "ville",  "actif", "notes", "role", "date", "conges", "jours_pris", "jours_dispo", "rtt", "rtt_pris", "rtt_dispo"],
         "data_model": "Accounts",
         "redirect": true,
         "redirect_action" : "users"
@@ -134,12 +134,28 @@
         "data_model": "Accounts",
         "data_ref": ["Role"]
     },
+		"GET/consultadmin": {
+		"module": "finder",
+		"methode": "one",
+		"screen": "consultadmin",
+		"auth": true,
+		"params_names": ["_id"],
+		"data_model": "AccountId"
+	},
+		"POST/insertconges": {
+		"module": "updater",
+        "methode": "one",
+        "screen": "consult",
+        "params_names": ["_id","conges","rtt"],
+		"auth": true,
+        "data_model": "AccountId"
+	},
     "POST/updateuser": {
         "module": "updater",
         "methode": "one",
         "screen": "users",
         "auth": true,
-        "params_names": ["_id", "login", "password", "nom", "prenom", "titre", "sexe", "password", "email", "telephone", "adresse1", "adresse2", "code_postal", "ville",  "actif", "notes", "role"],
+        "params_names": ["_id", "login", "password", "nom", "prenom", "titre", "sexe", "password", "email", "telephone", "adresse1", "adresse2", "code_postal", "ville",  "actif", "notes", "role", "date", "conges", "jours_pris", "jours_dispo", "rtt", "rtt_pris", "rtt_dispo"],
         "data_model": "AccountId",
         "redirect": true,
         "redirect_action": "users"

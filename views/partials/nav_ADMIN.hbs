@@ -175,7 +175,7 @@
                 <li class="header">NAVIGATION</li>
                 <li class="treeview">
                     <a href="/index">
-                        <i class="fa fa-home"></i> <span>Home</span>
+                        <i class="fa fa-home"></i> <span>Acceuil</span>
                     </a>
                 </li>
                 <li class="treeview {{#compare url 'user' operator='indexof'}}active{{/compare}}">
@@ -184,13 +184,9 @@
                     </a>
                     <ul class="treeview-menu">
                         <li class="{{#compare url '/users' operator='=='}}active{{/compare}}"><a href="/users"><i class="fa fa-circle-o"></i> List</a></li>
-                        <li class="{{#compare url '/formadduser' operator='=='}}active{{/compare}}"><a href="/formadduser"><i class="fa fa-circle-o"></i> Create</a></li>
+                        <li class="{{#compare url '/formadduser' operator='=='}}active{{/compare}}"><a href="/formadduser"><i class="fa fa-circle-o"></i> Créer un utilisateur</a></li>
+						<li class="{{#compare url '/consultadmin' operator='=='}}active{{/compare}}"><a href="/consultadmin"><i class="fa fa-circle-o"></i> Consultation</a></li>
                     </ul>
-                </li>
-                <li class="treeview">
-                    <a href="/glances">
-                        <i class="fa fa-dashboard"></i> <span>Monit'OTF</span>
-                    </a>
                 </li>
                 <li class="treeview">
                     <a href="/logs">

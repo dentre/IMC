@@ -5,6 +5,14 @@
         "screen": "index",
         "auth": true
     },
+	"POST/insertconges": {
+		"module": "updater",
+        "methode": "one",
+        "screen": "consult",
+        "params_names": ["_id","conges","rtt"],
+		"auth": true,
+        "data_model": "AccountId"
+	},
     "GET/index": {
         "module": "index",
         "methode": "titre",

@@ -88,17 +88,10 @@
            <li class="header">NAVIGATION</li>
            <li class="treeview">
              <a href="/index">
-               <i class="fa fa-dashboard"></i> <span>Home</span>
+               <i class="fa fa-dashboard"></i> <span>Acceuil</span>
              </a>
+			 <a href="/consult?_id={{user._id}}">
+			   <i class="fa fa-fire"></i> <span>Consultation</span></a>
            </li>
-
-           <!-- MENU SD -->
-           <li class="treeview {{#compare url 'logs' operator='indexof'}}active{{/compare}}">
-             <a href="/logs">
-               <i class="fa fa-fire"></i> <span>Logs</span>
-             </a>
-           </li>
-         </ul>
-       </section>
        <!-- /.sidebar -->
      </aside>
